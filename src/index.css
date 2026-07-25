@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Fonts */
+
+.font-heading {
+  font-family: "Fredoka", sans-serif;
+}
+
+.font-letter {
+  font-family: "Caveat", cursive;
+}
+
+.font-body {
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fbefef;
+  color: #332d35;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
+}
+
+.handwriting {
+  font-family: "Caveat", cursive;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5b3d3;
+  border-radius: 999px;
+}
