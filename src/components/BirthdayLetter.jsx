@@ -35,7 +35,7 @@ function BirthdayLetter({ onNext }) {
           border-[#C5B3D3]
           rounded-[2rem]
           px-4
-          py-4
+          py-5
           shadow-xl
           "
         >
@@ -80,8 +80,8 @@ function BirthdayLetter({ onNext }) {
               It's been almost <strong>10 years</strong> since I fell in love
               with you, and almost <strong>7 years</strong> since I confessed my
               feelings to you. From that day until today, one thing has never
-              changed, <strong>my love for you.</strong> In fact, with every
-              passing day, it has only grown deeper and stronger. 💞
+              changed—<strong>my love for you.</strong> With every passing day,
+              it has only grown deeper and stronger. 💞
             </p>
 
             <p className="mt-2.5">
@@ -92,21 +92,21 @@ function BirthdayLetter({ onNext }) {
 
             <p className="mt-2.5">
               Right now, we share our love through calls and chats, but I dream
-              of the day when we don't need a screen between us anymore. I can't
-              wait to sit beside you, hold your hand, make you smile, and create
-              countless beautiful memories together. 🥰
+              of the day when we won't need a screen between us anymore. I can't
+              wait to hold your hand, make you smile, and create beautiful
+              memories together. 🥰
             </p>
 
             <p className="mt-2.5">
               Just like your birthday is one of the most special days of my
-              life, I pray that another beautiful date is added to our story
-              forever, our <strong>Wedding Anniversary.</strong> 💍
+              life, I pray that one more beautiful date is added to our story
+              forever—our <strong>Wedding Anniversary.</strong> 💍
             </p>
 
             <p className="mt-2.5">
-              On your special day, I pray that Allah blesses you with endless
-              happiness, good health, success, peace, and everything your heart
-              truly desires. Ameen. ✨
+              On your special day, I pray that Allah blesses you with happiness,
+              good health, success, peace, and everything your heart truly
+              desires. Ameen. ✨
             </p>
 
             <p className="mt-3 font-semibold">
@@ -129,7 +129,7 @@ function BirthdayLetter({ onNext }) {
           }}
           onClick={onNext}
           className="
-          mt-4
+          mt-5
           bg-[#C5B3D3]
           text-[#332D35]
           px-7
@@ -139,6 +139,7 @@ function BirthdayLetter({ onNext }) {
           font-bold
           flex
           items-center
+          justify-center
           gap-2
           mx-auto
           shadow-md
