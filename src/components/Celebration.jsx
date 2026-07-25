@@ -148,7 +148,7 @@ function Celebration({ onNext }) {
           shadow-md
           "
         >
-          Watch Cake Cutting
+          This Is For You
           <Video size={20} />
         </motion.button>
       </div>

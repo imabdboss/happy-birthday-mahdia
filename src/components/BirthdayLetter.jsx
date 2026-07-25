@@ -60,9 +60,9 @@ function BirthdayLetter({ onNext }) {
             className="
             mt-4
             font-letter
-            text-[14px]
+            text-base
             sm:text-[17px]
-            leading-6
+            leading-7
             text-[#332D35]
             text-left
             "
@@ -147,7 +147,7 @@ function BirthdayLetter({ onNext }) {
           transition-all
           "
         >
-          Finish Surprise
+          One Last Surprise
           <Heart size={20} />
         </motion.button>
       </div>

@@ -107,7 +107,7 @@ function CakeCutting({ onNext }) {
           shadow-md
           "
         >
-          Read My Message
+          Read My Letter
           <Mail size={20} />
         </motion.button>
       </div>
