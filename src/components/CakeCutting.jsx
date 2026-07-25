@@ -43,7 +43,7 @@ function CakeCutting({ onNext }) {
           whitespace-nowrap
           "
         >
-          Cake Cutting Moments 🎂🎥
+          A Little Surprise From Me ❤️
         </motion.h1>
 
         {/* Video Card */}
