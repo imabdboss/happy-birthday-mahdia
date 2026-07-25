@@ -1,18 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { Video } from "lucide-react";
 
 function Celebration({ onNext }) {
+  const audioRef = useRef(null);
+
   useEffect(() => {
     // 🎵 Birthday Music
-    const audio = new Audio("/birthday-song.mp3");
-    audio.volume = 0.7;
+    audioRef.current = new Audio("/birthday-song.mp3");
+    audioRef.current.volume = 0.7;
+    audioRef.current.loop = true;
 
-    audio.play().catch(() => {});
+    audioRef.current.play().catch(() => {});
 
-    // 🎉 Full Screen Confetti
-
+    // 🎉 Confetti
     const duration = 3000;
     const end = Date.now() + duration;
 
@@ -26,7 +28,6 @@ function Celebration({ onNext }) {
         particleCount: 8,
         spread: 100,
         startVelocity: 30,
-
         origin: {
           x: Math.random(),
           y: Math.random() - 0.2,
@@ -36,7 +37,11 @@ function Celebration({ onNext }) {
 
     return () => {
       clearInterval(interval);
-      audio.pause();
+
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
     };
   }, []);
 

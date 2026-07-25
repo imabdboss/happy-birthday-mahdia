@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function Outro() {
@@ -13,7 +14,23 @@ function Outro() {
     }));
 
     setHearts(particles);
+
+    // ❤️ DDLJ Music
+    const audio = new Audio("/ddlj.mp3");
+    audio.volume = 0.2;
+    audio.loop = true;
+
+    audio.play().catch(() => {});
+
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
   }, []);
+
+  const handleReplay = () => {
+    window.location.reload();
+  };
 
   return (
     <section
@@ -29,6 +46,39 @@ function Outro() {
       relative
       "
     >
+      {/* Watch Again Button */}
+
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.92 }}
+        onClick={handleReplay}
+        className="
+        absolute
+        top-4
+        right-4
+        z-30
+        flex
+        items-center
+        gap-1.5
+        bg-[#FFE2E2]
+        border-2
+        border-[#C5B3D3]
+        rounded-full
+        px-3
+        py-1.5
+        shadow-md
+        text-[#332D35]
+        text-sm
+        font-body
+        font-medium
+        hover:bg-[#F9D6E3]
+        transition-all
+        "
+      >
+        <RotateCcw size={16} strokeWidth={2.5} />
+        Watch Again
+      </motion.button>
+
       {/* Floating Hearts */}
 
       {hearts.map((heart) => (

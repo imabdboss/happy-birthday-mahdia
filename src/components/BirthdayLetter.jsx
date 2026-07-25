@@ -80,7 +80,7 @@ function BirthdayLetter({ onNext }) {
               It's been almost <strong>10 years</strong> since I fell in love
               with you, and almost <strong>7 years</strong> since I confessed my
               feelings to you. From that day until today, one thing has never
-              changed—<strong>my love for you.</strong> With every passing day,
+              changed <strong>my love for you.</strong> With every passing day,
               it has only grown deeper and stronger. 💞
             </p>
 
@@ -100,7 +100,7 @@ function BirthdayLetter({ onNext }) {
             <p className="mt-2.5">
               Just like your birthday is one of the most special days of my
               life, I pray that one more beautiful date is added to our story
-              forever—our <strong>Wedding Anniversary.</strong> 💍
+              forever our <strong>Wedding Anniversary.</strong> 💍
             </p>
 
             <p className="mt-2.5">

@@ -63,6 +63,9 @@ function CakeCutting({ onNext }) {
           }}
           className="
           mt-8
+          mx-auto
+          w-full
+          max-w-[260px]
           bg-[#FFE2E2]
           border-4
           border-[#C5B3D3]
@@ -72,16 +75,20 @@ function CakeCutting({ onNext }) {
           "
         >
           <video
-            src="/a.mp4"
             controls
             playsInline
+            preload="metadata"
             className="
             w-full
-            aspect-video
-            object-cover
+            h-[460px]
             rounded-2xl
+            object-contain
+            bg-black
             "
-          />
+          >
+            <source src="/foryou.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </motion.div>
 
         {/* Button */}
