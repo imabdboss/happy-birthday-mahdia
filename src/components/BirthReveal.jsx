@@ -128,7 +128,7 @@ function BirthReveal({ onNext }) {
           "
         >
           <Gift size={18} />
-          Start the Surprise 🎁
+          Start the Surprise
         </motion.button>
       </div>
     </section>
